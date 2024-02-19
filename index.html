@@ -11,12 +11,12 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #f7f5f5;
+            background-color: #494444;
+            color: #000;
         }
 
         header {
-            background-color: #504c4c;
+            background-color: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -24,22 +24,22 @@
 
         section {
             padding: 20px;
-            background-color: #070707;
+            background-color: #fff;
             margin-bottom: 20px;
         }
 
         h1 {
-            color: #fffcfc;
+            color: #333;
             font-size: 24px;
         }
 
         h2 {
-            color: #f3f2f2;
+            color: #555;
             font-size: 20px;
         }
 
         p {
-            color: #fcfbfb;
+            color: #777;
         }
     </style>
 </head>
@@ -50,17 +50,19 @@
     </header>
 
     <section>
-        <h1>Lista</h1>
-        <p>binário</p>
-        <p>assembly</p>
-        <p>linguagens embarcadas</p>
-        <p>linguagens compiladas</p>
-        <p>linguagens interpretadas</p>
-        <p>linguagens híbridas</p>
-        <p>low code</p>
-        <p>linguagens nativas</p>
-        <p>linguagens dinâmicas</p>
-        <p>linguagens estáticas</p>
+        <h1>Lista de Linguagens de Programação</h1>
+        <ul>
+            <li>Binário</li>
+            <li>Assembly</li>
+            <li>Linguagens Embarcadas</li>
+            <li>Linguagens Compiladas</li>
+            <li>Linguagens Interpretadas</li>
+            <li>Linguagens Híbridas</li>
+            <li>Low Code</li>
+            <li>Linguagens Nativas</li>
+            <li>Linguagens Dinâmicas</li>
+            <li>Linguagens Estáticas</li>
+        </ul>
     </section>
 
     <section>
@@ -84,12 +86,12 @@
         <p>Assembly ou linguagem de montagem é uma notação legível por humanos para o código de máquina que uma arquitetura
             de computador específica usa, utilizada para programar códigos entendidos por dispositivos computacionais, como
             microprocessadores e microcontroladores.</p>
-        <h3>É eficiente?</h3>
-        <p>Sim, é trabalhoso.<br>
-            Sim, é demorado.<br>
-            Sim, é, algumas vezes, entediante. Mas uma vez feito, e
-            bem feito, você terá feito um ótimo trabalho e poderá ter a certeza que vai
-            tirar o máximo de sua máquina.</p>
+        <h3>Vantagens:</h3>
+        <p>Oferece controle direto sobre o hardware e recursos de baixo nível do sistema. É útil em situações onde o desempenho
+            é crítico ou quando é necessário acesso direto ao hardware.</p>
+        <h3>Desvantagens:</h3>
+        <p>É complexa, difícil de ler e escrever, e muitas vezes requer um conhecimento profundo da arquitetura do computador
+            alvo. Também é menos portável entre diferentes arquiteturas de CPU.</p>
     </section>
 
     <section>
@@ -101,6 +103,12 @@
         <p>As linguagens compiladas necessitam de uma etapa de "build" (montagem) – elas precisam, primeiramente, ser
             compiladas manualmente. Você precisa "remontar" o programa sempre que precisar fazer uma alteração</p>
         <p>Exemplos de linguagens compiladas puras são o C, o C++, o Erlang, o Haskell, o Rust e o Go.</p>
+        <h3>Vantagens:</h3>
+        <p>São tipicamente mais rápidas na execução do que linguagens interpretadas, pois o código é traduzido diretamente
+            em código de máquina. Também tendem a oferecer mais controle sobre o hardware e a memória do sistema.</p>
+        <h3>Desvantagens:</h3>
+        <p>Requerem um processo de compilação separado, o que pode aumentar o tempo de desenvolvimento. São menos portáveis
+            entre diferentes plataformas.</p>
     </section>
 
     <section>
@@ -111,6 +119,13 @@
         <p>Linguagens interpretadas, antigamente, eram significativamente mais lentas do que as linguagens compiladas.
             Porém, com o desenvolvimento da compilação just-in-time, essa distância vem diminuindo.</p>
         <p>Exemplos de linguagens interpretadas comuns são o PHP, o Ruby, o Python e o JavaScript.</p>
+        <h3>Vantagens:</h3>
+        <p>São geralmente mais portáveis entre diferentes plataformas, pois o código-fonte é executado pelo interpretador
+            em vez de ser traduzido em código de máquina específico. Também oferecem um ciclo de desenvolvimento mais
+            rápido, pois não exigem um processo de compilação separado.</p>
+        <h3>Desvantagens:</h3>
+        <p>Tendem a ser mais lentas na execução do que as linguagens compiladas, já que o código é interpretado linha por
+            linha durante a execução. Também podem oferecer menos controle sobre o hardware e a memória do sistema.</p>
     </section>
 
     <section>
@@ -118,24 +133,38 @@
         <p>São aquelas que implementam as duas formas de leituras, compilado e interpretado, por exemplo o Java que tem um
             compilador que converte seu código para bytecode e na sequência isso é lido para JVM (Java Virtual Machine) que
             é basicamente um interpretador, para no final ser executado pelo CPU.</p>
+        <h3>Vantagens:</h3>
+        <p>Combina as vantagens das linguagens compiladas e interpretadas. Oferece portabilidade e velocidade de execução
+            razoável, juntamente com a capacidade de ser otimizado para hardware específico.</p>
+        <h3>Desvantagens:</h3>
+        <p>Pode ser mais complexo de desenvolver e depurar devido à combinação de diferentes modelos de execução.</p>
     </section>
 
     <section>
-        <h2>Aplicativos Nativos:</h2>
-        <p>Como o próprio nome já diz, aplicativos nativos são desenvolvidos na linguagem exclusiva para um sistema
-            operacional, como Android ou IOS. Por ser desenvolvido de forma exclusiva para um sistema, um aplicativo feito
-            para IOS, por exemplo, não funcionará na plataforma Android, sendo necessário que o código seja reescrito
-            novamente para a linguagem específica.
-            O Aplicativo é baixado diretamente das lojas de aplicativos (App Store, Play Store ou Huawei Store), sendo
-            necessária a aprovação das respectivas plataformas para o App ser disponibilizado aos usuários.</p>
+        <h2>Linguagens Nativas:</h2>
+        <p>Linguagens nativas são aquelas desenvolvidas especificamente para um determinado sistema operacional ou plataforma,
+            como C para sistemas Unix-like ou Objective-C para iOS. Essas linguagens oferecem desempenho e integração superiores
+            ao sistema operacional específico, permitindo aproveitar totalmente os recursos do dispositivo.</p>
+        <h3>Vantagens:</h3>
+        <p>Oferecem desempenho superior e integração profunda com o sistema operacional. Podem tirar total proveito dos recursos
+            do dispositivo, como a câmera, o GPS e os sensores.</p>
+        <h3>Desvantagens:</h3>
+        <p>Exigem desenvolvimento separado para cada plataforma, aumentando os custos e o tempo de desenvolvimento. Manter
+            sincronizados múltiplos códigos de base para diferentes plataformas também pode ser desafiador.</p>
     </section>
-
+    
     <section>
-        <h2>Aplicativos Híbridos:</h2>
-        <p>O aplicativo híbrido é desenvolvido de forma que seja compatível com mais de um sistema operacional, normalmente
-            quando falamos de desenvolvimento mobile, Android e IOS (em alguns casos Windows Phone).
-            Ele pode ser disponibilizado para download em diversas lojas de aplicativo utilizando o mesmo código, não
-            exigindo um download a cada atualização, entretanto seu uso, fica atrelado à uma conexão com a internet.</p>
+        <h2>Linguagens Híbridas:</h2>
+        <p>Linguagens híbridas são aquelas que combinam características de linguagens compiladas e interpretadas. Por exemplo,
+            o Java é compilado para bytecode que é então interpretado pela JVM (Java Virtual Machine). Essas linguagens podem
+            oferecer portabilidade e velocidade de execução razoável, juntamente com a capacidade de serem otimizadas para
+            hardware específico.</p>
+        <h3>Vantagens:</h3>
+        <p>Combina as vantagens das linguagens compiladas e interpretadas. Oferece portabilidade e velocidade de execução
+            razoável, juntamente com a capacidade de ser otimizado para hardware específico.</p>
+        <h3>Desvantagens:</h3>
+        <p>Pode ser mais complexo de desenvolver e depurar devido à combinação de diferentes modelos de execução. Além disso,
+            pode oferecer desempenho inferior em comparação com linguagens nativas.</p>
     </section>
 
     <section>
@@ -143,18 +172,36 @@
         <p>O movimento no code ou low code é uma filosofia digital que permite que qualquer pessoa crie aplicativos e
             programas sem a necessidade de saber programação. Isso é conhecido como "programação sem código" ou "programação
             visual".</p>
+        <h3>Vantagens:</h3>
+        <p>Reduz a barreira de entrada para o desenvolvimento de software, permitindo que usuários sem experiência em
+            programação criem aplicativos funcionais. Acelera o desenvolvimento e pode reduzir os custos.</p>
+        <h3>Desvantagens:</h3>
+        <p>Pode resultar em aplicativos de qualidade inferior, devido à falta de controle fino sobre o código e à dependência
+            de ferramentas de geração de código automático.</p>
     </section>
 
     <section>
         <h2>Linguagens Estáticas:</h2>
         <p>Linguagens estáticas não permitem ao desenvolvedor alterar o tipo da variável depois de declarada. Geralmente a
             verificação de tipo é feita em tempo de compilação.</p>
+        <h3>Vantagens:</h3>
+        <p>Oferecem segurança adicional durante o desenvolvimento, detectando erros de tipo em tempo de compilação. Podem
+            ser mais eficientes em termos de uso de memória e desempenho.</p>
+        <h3>Desvantagens:</h3>
+        <p>Pode ser mais restritivo e exigir mais trabalho de desenvolvimento inicial devido à necessidade de declaração
+            explícita de tipos.</p>
     </section>
 
     <section>
         <h2>Linguagens Dinâmicas:</h2>
         <p>A linguagem dinâmica está ligada a habilidade da linguagem de programação permitindo que a mesma variável possa
             receber valores de tipos diferentes ao longo da execução do código.</p>
+        <h3>Vantagens:</h3>
+        <p>São mais flexíveis e fáceis de usar, permitindo o desenvolvimento rápido e iterativo. Oferecem maior flexibilidade
+            em termos de manipulação de dados e estruturas de dados.</p>
+        <h3>Desvantagens:</h3>
+        <p>Pode resultar em erros difíceis de detectar durante o desenvolvimento devido à tipagem dinâmica. Pode ser mais
+            lenta em termos de desempenho em comparação com linguagens estáticas.</p>
     </section>
 
 </body>
